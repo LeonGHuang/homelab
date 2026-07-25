@@ -1,8 +1,8 @@
 #!/bin/bash
 
-tmux new-window -n LARP
-tmux send-keys -t 0:LARP.1 "tmux split-window -h" Enter
-tmux send-keys -t 0:LARP.1 "tmux split-window -v" Enter
+tmux new-window -d -n LARP
+tmux split-window -h -t 0:LARP.1
+tmux split-window -v -t 0:LARP.2
 
 sleep 0.3
 
@@ -11,3 +11,6 @@ tmux send-keys -t 0:LARP.2 "cmatrix" Enter
 tmux send-keys -t 0:LARP.3 "fastfetch" Enter
 
 tmux send-keys -t 0:LARP.3 "tmux kill-window"
+
+tmux select-window -t LARP
+
