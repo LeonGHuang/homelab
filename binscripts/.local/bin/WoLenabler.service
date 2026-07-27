@@ -1,0 +1,21 @@
+#!/bin/bash
+
+# WoL requires wake-on setting to be enable on remote deivce
+# Each reboot reset the setting for unknown reason 
+# Enable this script on boot to ensure wake-on setting is always enable
+# Ensure script is executable
+
+# Makes a list of all ethnet ports by searching for names starting with e
+# Searching for e may not be the most logical way
+mapfile -t EthList < <(ls /sys/class/net | grep '^e')
+
+# Loop through ethernet port list
+# Current remote devices only have one port
+# Looping in case future device has more than one port
+for Eth in "${EthList}"
+	do 
+	echo " turning $Eth wake-on g"
+	sudo ethtool -s "$Eth" wol g
+done	
+
+
