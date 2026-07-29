@@ -4,7 +4,7 @@ After=network.target
 
 [Service]
 Type=oneshot
-ExecStart=~/.local/bin/wake-on-lan
+ExecStart=home/leon/.local/bin/wake-on-lan
 RemainAfterExit=true
 
 [Install]
