@@ -1,0 +1,11 @@
+[Unit]
+Description=script re-enable rj45 wake-on setting on boot
+After=network.target
+
+[Service]
+Type=oneshot
+ExecStart=~/.local/bin/wake-on-lan
+RemainAfterExit=true
+
+[Install]
+WantedBy=multi-user.target
