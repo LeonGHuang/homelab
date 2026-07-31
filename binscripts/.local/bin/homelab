@@ -1,8 +1,6 @@
 #!/bin/bash
 
 source ./homelab.env
-echo $tiny1_mac
-echo $tiny2_mac
 
 case $1 in
 -w|--wake)
