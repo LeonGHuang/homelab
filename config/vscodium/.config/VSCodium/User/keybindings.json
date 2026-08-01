@@ -1,0 +1,13 @@
+// Place your key bindings in this file to override the defaults
+[
+        {
+                "key": "f2",
+                "command": "toggleVim"
+        },
+
+        {
+                "key": "f5",
+                "command": "python.execInTerminal"
+        }
+
+]
