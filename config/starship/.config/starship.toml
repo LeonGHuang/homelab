@@ -1,5 +1,5 @@
 add_newline = false
-format = '''[\[$username$hostname $directory\] ](yellow)'''
+format = '''[$python\[$username$hostname $directory\] ](yellow)'''
 
 [username]
 style_user = "yellow"
@@ -20,3 +20,6 @@ format = "[$path]($style)"
 success_symbol = "[\\$](yellow)"
 error_symbol = "[\\$](red)"
 
+[python]
+style = "blue bold"
+format = '[(\($virtualenv\))]($style)'
