@@ -3,6 +3,7 @@
         "vim.foldfix": true,
         "editor.lineNumbers": "relative",
         "vim.useSystemClipboard": true,
+	"editor.cursorBlinking": "solid"
 
         // vim keybinds
         "vim.insertModeKeyBindings": [
