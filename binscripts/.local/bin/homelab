@@ -5,5 +5,10 @@ source ~/.local/bin/homelab.env
 case $1 in
 -w|--wake)
 	wol $tiny1_mac  
-	wol $tiny2_mac ;;  
+	wol $tiny2_mac   
+	;;
+-p|--poweroff)
+	ssh -t $tiny1_ip "sudo poweroff"
+	ssh -t $tiny2_ip "sudo poweroff"
+	;;
 esac
