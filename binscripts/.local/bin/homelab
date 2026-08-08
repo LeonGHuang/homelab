@@ -11,4 +11,7 @@ case $1 in
 	ssh -t $tiny1_ip "sudo poweroff"
 	ssh -t $tiny2_ip "sudo poweroff"
 	;;
+-s|--suspend)
+	ssh -t $tiny1_ip "systemctl suspend"
+	ssh -t $tiny2_ip "systemctl suspend"
 esac
