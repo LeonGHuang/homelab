@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source ./homelab.env
+source ~/.local/bin/homelab.env
 
 case $1 in
 -w|--wake)
