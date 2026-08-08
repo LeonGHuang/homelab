@@ -1,5 +1,5 @@
 add_newline = false
-format = '''[$python\[$username$hostname $directory\] ](yellow)'''
+format = '''[$python\[$username$hostname $directory\] ](bold yellow)'''
 
 [username]
 style_user = "yellow"
