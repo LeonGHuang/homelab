@@ -23,6 +23,15 @@
         "jupyter.interactiveWindow.textEditor.executeSelection": true,
         "task.allowAutomaticTasks": "on",
         "files.autoSave": "afterDelay",
+	"editor.parameterHints.enabled": true,
+	"editor.hover.enabled": true
+
+
+	// highlight settings
+	"editor.occurrencesHighlight": "off",
+	"editor.selectionHighlight": true,
+	"workbench.colorCustomizations": {"editor.lineHighlightBackground": "#a06cff18"}
+
 
         // good coding practises
         "editor.tabSize": 8,
