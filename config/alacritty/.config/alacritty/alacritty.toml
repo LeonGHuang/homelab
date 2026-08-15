@@ -3,7 +3,7 @@
 [window]
 dimensions = {columns = 105, lines = 30}
 startup_mode = "Fullscreen"
-opacity = 0.8
+opacity = 0.85
 padding = {x = 10, y = 10}
 decorations = "None"
 blur = true
