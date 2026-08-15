@@ -7,10 +7,20 @@ case $1 in
 	wol $tiny1_mac  
 	wol $tiny2_mac   
 	;;
+
+-c|--connect)
+	tmux rename-window "homelab"
+	tmux split-window -h 
+
+	tmux send-keys -t homelab.1 "ssh $tiny1_ip" Enter 
+	tmux send-keys -t homelab.2 "ssh $tiny2_ip" Enter 
+	;;
+
 -p|--poweroff)
 	ssh -t $tiny1_ip "sudo poweroff"
 	ssh -t $tiny2_ip "sudo poweroff"
 	;;
+
 -s|--suspend)
 	ssh -t $tiny1_ip "sudo systemctl suspend"
 	ssh -t $tiny2_ip "sudo systemctl suspend"
