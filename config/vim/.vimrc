@@ -7,6 +7,7 @@ set relativenumber
 set numberwidth=1
 highlight LineNr ctermfg=blue 
 set clipboard=unnamedplus
+set mouse=a
 
 
 
