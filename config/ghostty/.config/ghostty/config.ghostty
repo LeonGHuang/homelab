@@ -1,0 +1,33 @@
+# config.ghostty
+
+keybind = global:cmd+backquote=toggle_quick_terminal
+quick-terminal-position = top
+quick-terminal-size = 100%,100%
+quick-terminal-animation-duration = 0
+
+
+maximize = false
+fullscreen = true
+window-decoration = none
+# command = tmux
+
+
+font-size = 11
+font-family = JetBrains Mono 
+
+
+window-padding-x = 5
+window-padding-y = 5
+window-padding-balance = true
+
+
+background = #111111
+background-blur = true
+background-opacity = 0.95
+
+
+copy-on-select = clipboard
+cursor-style = block
+cursor-style-blink = false
+
+
