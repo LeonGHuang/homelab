@@ -33,7 +33,9 @@
 	// highlight settings
 	"editor.occurrencesHighlight": "off",
 	"editor.selectionHighlight": true,
-	"workbench.colorCustomizations": {"editor.lineHighlightBackground": "#a06cff18"},
+	"workbench.colorCustomizations": {
+		"editor.lineHighlightBackground": "#a06cff18"
+	},
 
 
         // good coding practises
@@ -57,7 +59,7 @@
         "window.menuBarVisibility": "toggle",
 
         // theme
-        "workbench.colorTheme": "Catppuccin Mocha",
+        "workbench.colorTheme": "Catppuccin Macchiato",
         "workbench.iconTheme": "vs-nomo-dark",
         "editor.foldingHighlight":false,
         "editor.tokenColorCustomizations": {
@@ -67,5 +69,11 @@
                 "settings": { "foreground": "#E06C75" }
                 }
                 ]
-        }
+        },
+        "python.languageServer": "None",
+
+        // windsurf pyright: hide grayed-out inferred types like "int | Unknown"
+        "windsurfPyright.analysis.inlayHints.variableTypes": false,
+        "editor.inlineSuggest.edits.allowCodeShifting": "never",
+        "editor.inlineSuggest.edits.renderSideBySide": "never"
 }
