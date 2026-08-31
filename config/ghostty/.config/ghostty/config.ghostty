@@ -8,13 +8,9 @@ quick-terminal-autohide = false
 gtk-quick-terminal-layer = overlay
 
 
-
-
-
-
 maximize = false
-fullscreen = true
-window-decoration = none
+fullscreen = false
+window-decoration = auto
 # command = tmux
 
 
